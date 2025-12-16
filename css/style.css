@@ -7,7 +7,6 @@ body {
 .img-topo {
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 
 .img-topo img {
@@ -17,30 +16,37 @@ body {
 .desc {
   font-size: 20px;
 }
-.navbar {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+
+nav {
   background: #111111;
-  border: 3px solid rgb(53, 45, 36);
   margin-bottom: 20px;
 }
 
-.navbar h2 {
-  justify-self: center;
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 50px;
+  border: 3px solid rgb(53, 45, 36);
+  justify-content: center;
 }
 
-.navbar a {
+ul a {
+  font-size: 20px;
   text-decoration: none;
+  padding: 15px 20px;
+  display: block;
   color: #756c4a;
 }
 
-.navbar a:hover {
+ul a:hover {
   color: #f5e19c;
 }
 
 .centro {
   text-align: center;
-  margin-top: 2cap;
+  margin-top: 20px;
 }
 
 .banner {
@@ -49,8 +55,8 @@ body {
 
 .grid-geral {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 10px;
+  grid-template-columns: 20% 50% 20%;
+  place-content: space-around;
 }
 
 .grid-conteudo {
@@ -99,9 +105,6 @@ body {
 .discussions h3 {
   margin: 0px;
   font-size: 25px;
-}
-
-.discussions-items {
 }
 
 .rights {
